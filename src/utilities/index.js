@@ -15,11 +15,7 @@ export async function fetchPriceList() {
 }
 
 export async function fetchOrdersList() {
-  console.log('store.ordersList');
-  console.log(!store.ordersList.length);
-  console.log(store.ordersList);
   if (!store.ordersList.length) {
-    console.log('inside list');
     store.ordersList = await fetchData(ORDERS_URL);
   }
   return store.ordersList;
