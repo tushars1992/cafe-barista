@@ -23,6 +23,8 @@ npm run test:unit
 npm run build
 ```
 ## Step to Follow to run app
+- Install node module by running following command
+npm install
 
 - Start stub server by running following command
 npm run start-stub
