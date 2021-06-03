@@ -1,20 +1,43 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/orders">Orders</router-link>
-      <router-link to="/prices">Prices</router-link>
+    <Nav class="mb-6" />
+    <div
+      class="
+        title
+        text-center
+        font-bold
+        text-4xl
+        md:text-7xl
+        my-10
+        md:my-20
+        text-yellow-50
+      "
+    >
+      Welcome to Cafe Barista
     </div>
     <router-view />
   </div>
 </template>
 
+<script>
+import Nav from '@/components/Nav.vue';
+
+export default {
+  components: {
+    Nav,
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('./assets/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 </style>
